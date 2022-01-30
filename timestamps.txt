@@ -1,0 +1,195 @@
+Timestamps
+
+Section 1 - Intro---
+Course Projec
+00:00 - Course Intro
+06:23 - Course Project Overview
+Section 2 - Setup & installation--------
+11:12 - Mac Python Installation
+13:05 - Mac Vscode install and setup
+16:27 - Windows Python Installation
+18:20 - Windows vscode install and setup
+22:01 - Python virtual environment Basics
+24:25 - Virtual environment on windows
+28:46 - Virtual environment on Mac
+--- Section 3 FastApi-------------------------
+34:07 - 10 Install dependencies w/ pip
+36:11 - 11 starting fastapi
+39:13 - 12. path operations
+48:15 - 13 Path Operation Order(yes it matters)
+53:12 - 14 Intro to Postman
+57:24 - 15 HTTP Post Requests
+01:07:19 - 16 Schema Validation with Pydantic
+01:22:35 - 17 CRUD Operations
+01:29:34 - 18 storing posts in Array
+01:33:56 - 19 creating posts
+01:38:05 - 20  Postman Collections & saving requests
+01:39:37 - 21 Retrieve One Post
+01:48:00 - 22 Path order Matters
+01:52:36 - 23 Changing response Status Codes
+02:01:39 - 24 Deleting Posts
+02:10:21 - 25 Updating Posts
+02:17:52 -  26 Automatic Documentation
+02:21:24 - 27  Python packages
+-------- Section 4 Databases---------------
+02:24:01 - 28 Database Intro
+02:28:44 - 29 Postgres Windows Install
+02:31:18 - 30 Postgres Mac Install
+02:34:16 - 31 Database Schema & Tables
+02:44:25 - 32 Managing Postgres with PgAdmin GUI
+03:12:00 - 33 Your first SQL Query
+03:19:33 - 34 Filter results with "where" keyword
+03:22:45 - 35 SQL Operators
+03:26:28 - 36 IN Keyword
+03:27:57 - 37 Pattern matching with LIKE keyword
+03:31:49 - 38 Ordering Results
+03:36:17 - 39 LIMIT & OFFSET
+03:39:11 - 40 Inserting Data
+03:46:57 - 41 Deleting Data
+03:49:47 - 42 Updating Data
+--------Section 5 Python + Raw SQL -----------------------------
+03:53:38 - 43 Setup App Database
+03:58:11 - 44 Connecting to database w/ Python
+04:07:50 - 45 Retrieving Posts
+04:11:25 - 46 Creating Post
+04:19:07 - 47 Get One Post
+04:24:02 - 48 Delete Post
+04:26:20 - 49 Update Post
+---------Section 6 ORMs -----------------------------
+04:31:08 - 50 ORM intro
+04:35:23 - 50 SQLALCHEMY setup
+04:55:15 - 51 Adding CreatedAt Column
+05:00:49 - 52 Get All Posts
+05:07:45 - 53 Create Posts
+05:15:40 - 54 Get Post by ID
+05:19:40 - 55 Delete Post
+05:22:21 - 56 Update Post
+------------Section 7 Pydantic Models --------------
+05:28:11 - 57 Pydantic vs ORM Models
+05:32:11 - 58 Pydantic Models Deep Dive
+05:38:47 - 59 Response Model
+-----------Section 8 Authentication & Users -------
+05:49:58 - 63 Creating Users Table
+05:54:40 - 64 User Registration Path Operation
+06:03:17 - 65 Hashing User Passwords 
+06:08:39 - 66 Refractor Hashing Logic
+06:10:22 - 67 Get User by ID
+06:17:03 - 68 FastAPI Routers
+06:27:24 - 69 Router Prefix
+06:30:21 - 70 Router Tags
+06:32:39 - 80 JWT Token Basics
+06:46:53 - 81 Login Process  
+07:00:34 - 82 Creating a Token
+07:09:48 - 83 OAuth2 PasswordRequestForm
+07:13:13 - 84 Verify user is Logged In
+07:25:11 - 85 Fixing Bugs
+07:27:49 - 86 Protecting Routes
+07:36:07 - 87 Test Expired Token
+07:38:03 - 88 Fetching User in Protected Routes
+07:42:34 - 89 Postman advanced Features
+--------------Section 9 Relationships-------------------
+07:50:23 - 90 SQL Relationship Basics
+07:54:49 - 91 Postgres Foreign Keys
+08:07:10 - 92 SQLAlchemy Foreign Keys
+08:13:30 - 93 Update Post Schema to include User
+08:17:49 - 94 Assigning Owner id when creating new post
+08:20:51 - 95 Delete and Update only your own posts
+08:27:38 - 96 Only Retrieving Logged in User's posts
+08:33:27 - 97 Sqlalchemy Relationships
+08:38:22 - 98 Query Parameters
+08:50:36 - 99 Cleanup our main.py file
+08:53:43 - 100 Environment Variables
+--------------Section 10 Vote/Like System ---------
+09:21:10 - 101 Vote/Like Theory
+09:26:26 - 102 Votes Table
+09:31:23 - 103 Votes Sqlalchemy
+09:34:01 - 104 Votes Route
+09:52:21 - 105 SQL Joins
+10:15:16 - 106 Joins in SqlAlchemy
+10:28:11 - 107 Get One Post with Joins
+--------------Section 11 Database Migration w/ Alembic------------
+10:30:08 - 108 What is a database migration tool
+10:33:35 - 109 Alembic Setup
+10:42:19 - 110 Alembic First Revision
+10:51:39 - 111 Alembic Rollback database Schema
+10:56:17 - 112 Alembic finishing up the rest of the schema
+11:13:40 - 113 Disable SqlAlchemy create Engine
+---------------Section 12 Pre Deployment Checklist -----------------
+11:14:18 - 114 What is CORS?????
+11:23:28 - 115 Git PreReqs
+11:27:30 - 116 Git Install
+11:29:13 - 117 Github
+---------------Section 13 Deployment Heroku-----------------------------
+11:34:29 - 118 Heroku intro
+11:35:30 - 119 Create Heroku App
+11:40:11 - 120 Heroku procfile
+11:44:49 - 121 Adding a Postgres database
+11:48:32 - 122 Environment Variables in Heroku
+11:58:49 - 123 Alembic migrations on Heroku Postgres instance
+12:02:42 - 124 Pushing changed to production
+--------------Section 14 Deployment Ubuntu-------------------------------
+12:04:54 - 125 Create an Ubuntu VM
+12:07:54 - 126 Update packages
+12:10:37 - 127 Install Python
+12:12:11 - 128 Install Postgres & setup password
+12:17:18 - 129 Postgres Config
+12:24:40 - 130 Create new user and setup python evironment
+12:33:56 - 131 Environment Variables
+12:42:14 - 132 Alembic migrations on production database
+12:45:47 - 133 Gunicorn
+12:54:02 - 134 Creating a Systemd service
+13:04:35 - 135 NGINX
+13:10:35 - 136 Setting up Domain name
+13:15:09 - 137 SSL/HTTPS
+13:19:21 - 138 NGINX enable
+13:19:56 - 139 Firewall
+13:23:37 - 140 Pushing code changes to Production
+---------------Section 15 Docker---------------------------------------
+13:25:59 - 141 Dockerfile
+13:38:29 - 142 Docker Compose
+13:48:24 - 143 Postgres Container
+13:56:12 - 144 Bind Mounts
+14:03:29 - 145 Dockerhub
+14:07:58 - 146 Production vs Development
+---------------Section 16 Testing--------------------------------------
+14:14:41 - 147 Testing Intro
+14:17:09 - 148 Writing your first test
+14:30:12 - 149 The -s & -v flags
+14:31:34 - 150 Testing more functions
+14:35:19 - 160 Parametrize
+14:40:11 - 170 Testing Classes
+14:48:27 - 171 Fixtures
+14:55:30 - 172 Combining Fixtures + Parametrize
+14:59:03 - 173 Testing Exceptions
+15:05:57 - 174 FastAPI TestClient
+15:14:16 - 175 Pytest flags
+15:17:21 - 176 Test create user
+15:25:13 - 177 Setup testing database
+15:36:37 - 178 Create & destroy database after each test
+15:44:08 - 179 More Fixtures to handle database interaction
+15:50:25 - 180 Trailing slashes in path
+15:53:02 - 181 Fixture scope
+16:07:40 - 182 Test user fixture
+16:14:30 - 183 Test/validate token
+16:18:49 - 184 Conftest.py
+16:21:59 - 185 Failed login test
+16:27:32 - 186 Get all posts test
+16:35:10 - 187 Posts fixture to create test posts
+16:51:05 - 188 Unauthorized Get Posts test
+16:52:25 - 189 Get one post test
+16:59:01 - 190 Create post test
+17:07:38 - 191 Delete post test
+17:14:56 - 192 Update post
+17:21:42 - 193 Voting tests
+ ----------------Section 17 CI/CD pipeline----------------------
+ 17:34:05 - CI/CD intro
+17:43:19 - Github Actions
+17:49:22 - Creating Jobs
+17:57:28 - setup python/dependencies/pytest
+18:06:04 - Environment variables
+18:11:09 - Github Secrets
+18:18:04 - Testing database
+18:23:32 - Building Docker images
+18:34:23 - Deploy to heroku
+18:49:00 - Failing tests in pipeline
+18:52:08 - Deploy to Ubuntu
