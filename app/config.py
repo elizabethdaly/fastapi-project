@@ -15,8 +15,8 @@ class Settings(BaseSettings):
 
     # Tell pydantic where to get these values
     class Config:
-        env_file = "../.env" # for server ok but alembic error
-        # env_file = ".env" # alembic ok but server error
+        # env_file = "../.env" # for server ok but alembic error
+        env_file = ".env" # alembic ok but server error, ST has this on gitub
 
 # Create an instance of Settings class
 settings = Settings()

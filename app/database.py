@@ -6,12 +6,11 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 print("In database.py: next liine imports config.settings")
-# from .config import settings # DB credentials he has .config
-from config import settings # alembic gave error but server runs
+from .config import settings # ST github
+# from config import settings # alembic gave error but server runs
 # from app.config import settings # alembic ok but server error
 import sys, os
 sys.path.insert(0, os.getcwd()) # 'path_to_your_module') # or: sys.path.insert(0, os.getcwd())
-from config import settings # server runs with this one
 
 # import psycopg2  # PostgreSQL 
 # from psycopg2.extras import RealDictCursor # To get column names from DB
