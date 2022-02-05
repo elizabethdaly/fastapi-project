@@ -3,10 +3,10 @@ from fastapi import FastAPI, Response, status, HTTPException, Depends, APIRouter
 # sqlalchemy stuff & fast api wrt sql dbs
 from sqlalchemy.orm import Session
 
-# from .. import models, schemas, utils
-# from ..database import get_db
-import models, schemas, utils
-from database import get_db
+from .. import models, schemas, utils
+from ..database import get_db
+# import models, schemas, utils
+# from database import get_db
 
 # Create a router object
 router = APIRouter(
