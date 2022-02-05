@@ -8,7 +8,8 @@ print(f'the name is {__name__}') # main
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from routers import post, user, auth, vote # looks ok
+# from routers import post, user, auth, vote # looks ok
+from .routers import post, user, auth, vote # from sj github repo
 # from config import settings
 
 # Access settings from config file like this
