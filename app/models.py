@@ -13,7 +13,8 @@ print("In models.py: next line imports Base from database")
 # from app.database import Base # alembic ok but server error
 import sys, os
 sys.path.insert(0, os.getcwd()) # 'path_to_your_module') # or: sys.path.insert(0, os.getcwd())
-from database import Base # server runs with this one
+# from database import Base # server runs with this one
+from .database import Base # ST github
 
 # Creaet a ORM model for posts table by extending the Base class from database.py
 class Post(Base):
