@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 
 # import models, schemas, oauth2 # ok locally
 from .. import models, schemas, oauth2 # st github repo
-from database import get_db
+from ..database import get_db # ST github
 
 from typing import List, Optional
 # import oauth2
