@@ -5,9 +5,8 @@ from sqlalchemy import func  # for count functions etc
 # sqlalchemy stuff & fast api wrt sql dbs
 from sqlalchemy.orm import Session
 
-# from .. import models, schemas
-# from ..database import get_db
-import models, schemas, oauth2
+# import models, schemas, oauth2 # ok locally
+from .. import models, schemas, oauth2 # st github repo
 from database import get_db
 
 from typing import List, Optional
