@@ -1,0 +1,14 @@
+name: Build and Deploy Code
+
+# run on push and pull requests to all branches
+on: [push, pull_request]
+
+# job, on machine, and steps
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pulling git repo # human readable name for the step
+        uses: actions/checkoutv2 # from the marketplace
+      - name: say hi to Liz
+        run: echo "hello Liz" # run any cmd on cli of this ubuntu machine

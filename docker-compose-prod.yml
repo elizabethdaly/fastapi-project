@@ -1,0 +1,39 @@
+version: "3" # pick whatever version you want based on what you need, check docker docs
+services: #ie containers, 1=api, 2=postgres db
+  api: # our api
+    # build: . # build image in current dir only in dev
+    image: lizdaly/fastapi # repo name on dockerhub
+    ports:
+      - 80:8000 #,any open port on local machine>:<port we specified in Dockerfile>
+    # volumes: # no bind mount in production
+    #   - ./:/usr/src/app:ro # sync everything in local machine with folder in container read-only
+    
+    # env_file: ./.env # for the env vars storded in curent dir in this file
+    environment:
+      - DATABASE_HOSTNAME=${DATABASE_HOSTNAME}
+      - DATABASE_PORT=${DATABASE_PORT}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE_NAME=${DATABASE_NAME}
+      - DATABASE_USERNAME=${DATABASE_USERNAME}
+      - SECRET_KEY=${SECRET_KEY}
+      - ALGORITHM=${ALGORITHM}
+      - ACCESS_TOKEN_EXPIRE_MINUTES=${ACCESS_TOKEN_EXPIRE_MINUTES}
+
+    # below is default command (in Dockerfile) so can just comment it here, no --reload flag
+    # command: uvicorn app.main:app --host 0.0.0.0 --port 8000 # 
+
+    depends_on: 
+      - postgres # start pg container first
+
+  postgres: # a postgres db
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD} # same as above
+      - POSTGRES_DB=${DATABASE_NAME} # as above
+
+    volumes:
+      - postgres-db:/var/lib/postgresql/data # path in container of data we want to save in postgres-db
+
+# designed so that multiple containers can access global volumes
+volumes: # dreate this global section if any volumes created above
+  postgres-db:
