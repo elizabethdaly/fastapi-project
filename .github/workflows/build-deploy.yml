@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: pulling git repo # human readable name for the step
-        uses: actions/checkoutv2 # from the marketplace
+        uses: actions/checkout@v2 # from the marketplace
       - name: say hi to Liz
         run: echo "hello Liz" # run any cmd on cli of this ubuntu machine
