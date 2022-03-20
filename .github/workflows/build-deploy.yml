@@ -99,7 +99,25 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: [build] # build job above must run first
+    environment: production
 
     steps:
-      - name: deploying stuff
-        run: echo "testing two jobs before deploying some stuff"
+      # Pull git repo using an action from the marketplace
+      - name: pulling git repo # human readable name for the step
+        uses: actions/checkout@v2 
+        
+      - name: deploying to Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+
+    # maunal steps for Heroku deploy
+    # pull our github repo
+    # install heroku cli
+    # heroku login
+    # add git remote for heroku
+    # gut push heroku main
+
+    # GitHub marketplace action instead
