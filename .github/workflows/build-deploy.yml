@@ -28,3 +28,10 @@ jobs:
       # Install dependencies from cli of runner
       - name: install all dependencies
         run: pip install -r requirements.txt
+      
+      # Install & run pytest
+      - name: test with pytest
+        run: | # pipe to run several commands
+          pip install pytest
+          pytest
+          
