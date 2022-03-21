@@ -105,7 +105,8 @@ jobs:
       # Pull git repo using an action from the marketplace
       - name: pulling git repo # human readable name for the step
         uses: actions/checkout@v2 
-        
+
+      # GitHub marketplace action instead of manual steps below
       - name: deploying to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
@@ -120,4 +121,4 @@ jobs:
     # add git remote for heroku
     # gut push heroku main
 
-    # GitHub marketplace action instead
+    

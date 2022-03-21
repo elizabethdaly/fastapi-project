@@ -14,7 +14,7 @@ def test_get_all_posts(authorized_client, test_posts):
     posts_list = list(posts_map)
 
     assert len(res.json()) == len(test_posts)
-    assert res.status_code == 200
+    assert res.status_code == 201 # correct value is 200
 
     # next won't work as order of posts returned is not by id (always seems to be 2)
     # print(posts_list[0].Post.id)

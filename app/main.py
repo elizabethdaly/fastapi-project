@@ -49,5 +49,5 @@ app.include_router(vote.router)
 # decorator = instance of fastapi with http get method
 @app.get("/")  # path to url
 def root():  # function
-    return {"message": "Deployed from CI/CD pipeline"}
+    return {"message": "Testing failed tests"}
     # Test in Postman with a GET request to http://127.0.0.1:8000/
